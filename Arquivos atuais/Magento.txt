@@ -1,0 +1,1770 @@
+{
+	"SP01": {		"label": "SP Capital - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 01000000) && ({shipto.postcode} <= 11999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 28 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"},
+	"SP02": {		"label": "SP Capital - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 01000000) && ({shipto.postcode} <= 11999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 32 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"},
+	"SP03": {
+		"label": "SP Capital - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 01000000) && ({shipto.postcode} <= 11999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 36 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"SP04": {
+		"label": "SP Capital - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 01000000) && ({shipto.postcode} <= 11999999)) && (({cart.weight} >= 70))",
+		"fees": "( 42 + (({cart.weight}-70)*348/1000) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"SP05": {
+		"label": "SP Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 12000000) && ({shipto.postcode} <= 19999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 78 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"SP06": {
+		"label": "SP Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 12000000) && ({shipto.postcode} <= 19999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 80 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"SP07": {
+		"label": "SP Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 12000000) && ({shipto.postcode} <= 19999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 82 + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"SP08": {
+		"label": "SP Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 12000000) && ({shipto.postcode} <= 19999999)) && (({cart.weight} >= 70))",
+		"fees": "( 85 + (({cart.weight}-70)*990/1000) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	
+
+	"RJ01": {
+		"label": "RJ Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 20000000) && ({shipto.postcode} <= 26600000)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 30.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ02": {
+		"label": "RJ Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 20000000) && ({shipto.postcode} <= 26600000)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 37.8 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ03": {
+		"label": "RJ Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 20000000) && ({shipto.postcode} <= 26600000)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 53 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ04": {
+		"label": "RJ Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 20000000) && ({shipto.postcode} <= 26600000)) && (({cart.weight} >= 100))",
+		"fees": "( 53 + (({cart.weight}-100)*572.4/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ05": {
+		"label": "RJ Interior - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 26601000) && ({shipto.postcode} <= 28999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 37.3 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ06": {
+		"label": "RJ Interior - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 26601000) && ({shipto.postcode} <= 28999999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 44.8 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ07": {
+		"label": "RJ Interior - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 26601000) && ({shipto.postcode} <= 28999999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 57.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"RJ08": {
+		"label": "RJ Interior - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 26601000) && ({shipto.postcode} <= 28999999)) && (({cart.weight} >= 100))",
+		"fees": "( 57.2 + (({cart.weight}-100)*712.8/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},	
+	
+	"ES01": {
+		"label": "ES Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29000000) && ({shipto.postcode} <= 29099999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 35.1 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES02": {
+		"label": "ES Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29000000) && ({shipto.postcode} <= 29099999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 50.8 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES03": {
+		"label": "ES Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29000000) && ({shipto.postcode} <= 29099999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 67.9 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES04": {
+		"label": "ES Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29000000) && ({shipto.postcode} <= 29099999)) && (({cart.weight} >= 100))",
+		"fees": "( 67.9 + (({cart.weight}-100)*723.4/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES05": {
+		"label": "ES Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29100000) && ({shipto.postcode} <= 29999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 39.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES06": {
+		"label": "ES Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29100000) && ({shipto.postcode} <= 29999999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 56.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES07": {
+		"label": "ES Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29100000) && ({shipto.postcode} <= 29999999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 74.8 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"ES08": {
+		"label": "ES Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 29100000) && ({shipto.postcode} <= 29999999)) && (({cart.weight} >= 100))",
+		"fees": "( 74.8 + (({cart.weight}-100)*808/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},	
+	
+	"MG01": {
+		"label": "MG Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 30000000) && ({shipto.postcode} <= 34999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 30.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG02": {
+		"label": "MG Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 30000000) && ({shipto.postcode} <= 34999999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 38.5 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG03": {
+		"label": "MG Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 30000000) && ({shipto.postcode} <= 34999999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 54.6 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG04": {
+		"label": "MG Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 30000000) && ({shipto.postcode} <= 34999999)) && (({cart.weight} >= 100))",
+		"fees": "( 54.6 + (({cart.weight}-100)*589.7/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG05": {
+		"label": "MG Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 35000000) && ({shipto.postcode} <= 39999999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 38.5 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG06": {
+		"label": "MG Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 35000000) && ({shipto.postcode} <= 39999999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 46.5 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG07": {
+		"label": "MG Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 35000000) && ({shipto.postcode} <= 39999999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 59 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"MG08": {
+		"label": "MG Interior - 12 dias úteis",
+		"conditions": "(({shipto.postcode} >= 35000000) && ({shipto.postcode} <= 39999999)) && (({cart.weight} >= 100))",
+		"fees": "( 59 + (({cart.weight}-100)*737.1/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},	
+	
+	"TO01": {
+		"label": "TO Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77000000) && ({shipto.postcode} <= 77270000)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 46 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO02": {
+		"label": "TO Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77000000) && ({shipto.postcode} <= 77270000)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 66 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO03": {
+		"label": "TO Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77000000) && ({shipto.postcode} <= 77270000)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 87 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO04": {
+		"label": "TO Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77000000) && ({shipto.postcode} <= 77270000)) && (({cart.weight} >= 100))",
+		"fees": "( 87 + (({cart.weight}-100)*937.2/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO05": {
+		"label": "TO Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77300000) && ({shipto.postcode} <= 77995999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 57.5 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO06": {
+		"label": "TO Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77300000) && ({shipto.postcode} <= 77995999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 82.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO07": {
+		"label": "TO Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77300000) && ({shipto.postcode} <= 77995999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 109.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"TO08": {
+		"label": "TO Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 77300000) && ({shipto.postcode} <= 77995999)) && (({cart.weight} >= 100))",
+		"fees": "( 109.2 + (({cart.weight}-100)*1168/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},	
+
+	
+	"DF01": {
+		"label": "DF Capital - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 70000000) && ({shipto.postcode} <= 72799999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 35.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"DF02": {
+		"label": "DF Capital - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 70000000) && ({shipto.postcode} <= 72799999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 50.8 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"DF03": {
+		"label": "DF Capital - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 70000000) && ({shipto.postcode} <= 72799999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 67.2 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"DF04": {
+		"label": "DF Capital - 9 dias úteis",
+		"conditions": "(({shipto.postcode} >= 70000000) && ({shipto.postcode} <= 72799999)) && (({cart.weight} >= 100))",
+		"fees": "( 67.2 + (({cart.weight}-100)*723.45/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	
+	"GO01": {
+		"label": "GO Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 72800000) && ({shipto.postcode} <= 74894999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 31.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO02": {
+		"label": "GO Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 72800000) && ({shipto.postcode} <= 74894999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 45.3 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO03": {
+		"label": "GO Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 72800000) && ({shipto.postcode} <= 74894999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 60 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO04": {
+		"label": "GO Capital - 8 dias úteis",
+		"conditions": "(({shipto.postcode} >= 72800000) && ({shipto.postcode} <= 74894999)) && (({cart.weight} >= 100))",
+		"fees": "( 60 + (({cart.weight}-100)*646.4/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO05": {
+		"label": "GO Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 74895000) && ({shipto.postcode} <= 76799999)) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 39.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO06": {
+		"label": "GO Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 74895000) && ({shipto.postcode} <= 76799999)) && (({cart.weight} >= 30) && ({cart.weight} < 60))",
+		"fees": "( 56.7 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO07": {
+		"label": "GO Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 74895000) && ({shipto.postcode} <= 76799999)) && (({cart.weight} >= 60) && ({cart.weight} < 100))",
+		"fees": "( 75 + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},
+	"GO08": {
+		"label": "GO Interior - 11 dias úteis",
+		"conditions": "(({shipto.postcode} >= 74895000) && ({shipto.postcode} <= 76799999)) && (({cart.weight} >= 100))",
+		"fees": "( 75 + (({cart.weight}-100)*807/1000) + ({cart.price+tax+discount} * (0.004 + 0.0015)) + 2.9 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"AL01": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 27.46 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL02": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 36.09 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL03": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 41.91 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL04": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 54.92 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL05": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 68.66 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL06": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 87.87 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL07": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 123.58 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL08": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 156.93 + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL09": {
+		"label": "AL Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57000000) && ({shipto.postcode} <= 57099999)) && (({cart.weight} >= 200))",
+		"fees": "( 156.93 + (({cart.weight}-200)*900/1000) + ({cart.price+tax+discount} * (0.0051 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"AL10": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 35.34 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL11": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 46.45 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL12": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 53.01 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL13": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 70.69 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL14": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 88.36 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL15": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 113.11 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL16": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 159.06 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL17": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 201.98 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"AL18": {
+		"label": "AL Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 57100000) && ({shipto.postcode} <= 57999999)) && (({cart.weight} >= 200))",
+		"fees": "( 201.89 + (({cart.weight}-200)*1200/1000) + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	
+	
+	"BA01": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 25.88 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA02": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 30.42 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA03": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 38.83 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA04": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 51.78 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA05": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 64.72 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA06": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 82.84 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA07": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 116.5 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA08": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 147.93 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA09": {
+		"label": "BA Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 40000000) && ({shipto.postcode} <= 44470000)) && (({cart.weight} >= 200))",
+		"fees": "( 147.93 + (({cart.weight}-200)*900/1000) + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"BA10": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 38.31 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA11": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 50.35 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA12": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 52.66 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA13": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 70.23 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA14": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 87.79 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA15": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 112.37 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA16": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 158.02 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA17": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 200.67 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"BA18": {
+		"label": "BA Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 44471000) && ({shipto.postcode} <= 48999999)) && (({cart.weight} >= 200))",
+		"fees": "( 200.67 + (({cart.weight}-200)*1200/1000) + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"CE01": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 31.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE02": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 37.46 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE03": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 46.65 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE04": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 57.02 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE05": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 77.76 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE06": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 100.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE07": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 128.3 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE08": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 162.93 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE09": {
+		"label": "CE Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 60000000) && ({shipto.postcode} <= 61900999)) && (({cart.weight} >= 200))",
+		"fees": "( 162.93 + (({cart.weight}-200)*1100/1000) + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"CE10": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 43.02 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE11": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 56.54 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE12": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 64.53 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE13": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 86.05 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE14": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 107.55 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE15": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 137.67 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE16": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 193.60 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE17": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 245.85 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"CE18": {
+		"label": "CE Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 61901000) && ({shipto.postcode} <= 63999999)) && (({cart.weight} >= 200))",
+		"fees": "( 245.85 + (({cart.weight}-200)*1400/1000) + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"MA01": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 31.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA02": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 37.46 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA03": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 46.65 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA04": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 57.02 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA05": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 77.76 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA06": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 100.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA07": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 128.3 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA08": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 162.93 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA09": {
+		"label": "MA Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65000000) && ({shipto.postcode} <= 65099999)) && (({cart.weight} >= 200))",
+		"fees": "( 162.93 + (({cart.weight}-200)*1100/1000) + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"MA10": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 43.02 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA11": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 56.54 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA12": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 64.53 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA13": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 86.05 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA14": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 107.55 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA15": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 137.67 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA16": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 193.60 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA17": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 245.85 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"MA18": {
+		"label": "MA Interior - 21 dias úteis",
+		"conditions": "(({shipto.postcode} >= 65100000) && ({shipto.postcode} <= 65999999)) && (({cart.weight} >= 200))",
+		"fees": "( 245.85 + (({cart.weight}-200)*1400/1000) + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"PI01": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 31.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI02": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 37.46 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI03": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 46.65 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI04": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 57.02 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI05": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 77.76 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI06": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 100.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI07": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 128.3 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI08": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 162.93 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI09": {
+		"label": "PI Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64000000) && ({shipto.postcode} <= 64099999)) && (({cart.weight} >= 200))",
+		"fees": "( 162.93 + (({cart.weight}-200)*1100/1000) + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"PI10": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 43.02 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI11": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 56.54 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI12": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 64.53 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI13": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 86.05 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI14": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 107.55 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI15": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 137.67 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI16": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 193.60 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI17": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 245.85 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PI18": {
+		"label": "PI Interior - 19 dias úteis",
+		"conditions": "(({shipto.postcode} >= 64100000) && ({shipto.postcode} <= 64999999)) && (({cart.weight} >= 200))",
+		"fees": "( 245.85 + (({cart.weight}-200)*1400/1000) + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"RN01": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 31.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN02": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 37.46 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN03": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 46.65 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN04": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 57.02 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN05": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 77.76 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN06": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 100.10 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN07": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 128.3 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN08": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 162.93 + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN09": {
+		"label": "RN Capital - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59000000) && ({shipto.postcode} <= 59099999)) && (({cart.weight} >= 200))",
+		"fees": "( 162.93 + (({cart.weight}-200)*1100/1000) + ({cart.price+tax+discount} * (0.0052 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN10": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 43.02 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN11": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 56.54 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN12": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 64.53 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN13": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 86.05 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN14": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 107.55 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN15": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 137.67 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN16": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 193.60 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN17": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 245.85 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"RN18": {
+		"label": "RN Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 59100000) && ({shipto.postcode} <= 59999999)) && (({cart.weight} >= 200))",
+		"fees": "( 245.85 + (({cart.weight}-200)*1400/1000) + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	
+	
+	"PB01": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 30.06 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB02": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 39.51 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB03": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 45.21 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB04": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 60.14 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB05": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 75.16 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB06": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 96.22 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB07": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 135.3 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB08": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 171.81 + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB09": {
+		"label": "PB Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58000000) && ({shipto.postcode} <= 58099999)) && (({cart.weight} >= 200))",
+		"fees": "( 171.81 + (({cart.weight}-200)*1000/1000) + ({cart.price+tax+discount} * (0.0057 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB10": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 39.49 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB11": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 51.88 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB12": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 59.23 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB13": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 78.97 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB14": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 98.72 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB15": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 126.36 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB16": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 177.69 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB17": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 225.64 + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PB18": {
+		"label": "PB Interior - 18 dias úteis",
+		"conditions": "(({shipto.postcode} >= 58100000) && ({shipto.postcode} <= 58999999)) && (({cart.weight} >= 200))",
+		"fees": "( 225.64 + (({cart.weight}-200)*1300/1000) + ({cart.price+tax+discount} * (0.0075 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"PE01": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 27.72 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE02": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 35.84 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE03": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 40.86 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE04": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 56.58 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE05": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 70.90 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE06": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 92.73 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE07": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 130.63 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE08": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 169.2 + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE09": {
+		"label": "PE Capital - 14 dias úteis",
+		"conditions": "(({shipto.postcode} >= 50000000) && ({shipto.postcode} <= 54999999)) && (({cart.weight} >= 200))",
+		"fees": "( 169.2 + (({cart.weight}-200)*1000/1000) + ({cart.price+tax+discount} * (0.0055 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"PE10": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 40.42 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE11": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 53.44 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE12": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 60.99 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE13": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 81.33 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE14": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 101.66 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE15": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 130.12 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE16": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 183 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE17": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 232.38 + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"PE18": {
+		"label": "PE Interior - 17 dias úteis",
+		"conditions": "(({shipto.postcode} >= 55000000) && ({shipto.postcode} <= 56999999)) && (({cart.weight} >= 200))",
+		"fees": "( 232.38 + (({cart.weight}-200)*1400/1000) + ({cart.price+tax+discount} * (0.0081 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},			
+	
+	
+	"SE01": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 25.39 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE02": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 33.37 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE03": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 38.07 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE04": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 50.77 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE05": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 63.46 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE06": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 81.24 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE07": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 114.25 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE08": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 145.08 + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE09": {
+		"label": "SE Capital - 13 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49000000) && ({shipto.postcode} <= 49099999)) && (({cart.weight} >= 200))",
+		"fees": "( 145.08 + (({cart.weight}-200)*1000/1000) + ({cart.price+tax+discount} * (0.0056 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	"SE10": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 35.34 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE11": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 46.45 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE12": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 53.01 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE13": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 30) && ({cart.weight} < 50))",
+		"fees": "( 71.89 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE14": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 88.36 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE15": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 113.11 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE16": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 100) && ({cart.weight} < 150))",
+		"fees": "( 159.06 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE17": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 150) && ({cart.weight} < 200))",
+		"fees": "( 201.98 + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},
+	"SE18": {
+		"label": "SE Interior - 16 dias úteis",
+		"conditions": "(({shipto.postcode} >= 49100000) && ({shipto.postcode} <= 49999999)) && (({cart.weight} >= 200))",
+		"fees": "( 201.98 + (({cart.weight}-200)*1200/1000) + ({cart.price+tax+discount} * (0.0068 + 0.0025)) + (3.61) + 31.76 )/(1-0.1-0.17)"
+	},	
+	
+	
+	"PR01": {
+		"label": "PR Capital - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 80000000) && ({shipto.postcode} <= 83800000)) && (({cart.weight} >= 0))",
+		"fees": "( 20 + ({cart.weight}*0.29) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+	"PR02": {
+		"label": "PR Interior - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 83801000) && ({shipto.postcode} <= 87999999)) && (({cart.weight} >= 0))",
+		"fees": "( 24 + ({cart.weight}*0.345) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},
+
+	
+	"SC01": {
+		"label": "SC Capital - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 88000000) && ({shipto.postcode} <= 88469999)) && (({cart.weight} >= 0))",
+		"fees": "( 20.3 + ({cart.weight}*0.3) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},	
+	"SC02": {
+		"label": "SC Interior - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 88470000) && ({shipto.postcode} <= 89999999)) && (({cart.weight} >= 0))",
+		"fees": "( 18.2 + ({cart.weight}*0.265) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},	
+
+	
+	"RS01": {
+		"label": "RS Capital - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 90000000) && ({shipto.postcode} <= 94900000)) && (({cart.weight} >= 0))",
+		"fees": "( 23.50 + ({cart.weight}*0.25) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},	
+	"RS02": {
+		"label": "RS Interior - 4 dias úteis",
+		"conditions": "(({shipto.postcode} >= 94901000) && ({shipto.postcode} <= 99999999)) && (({cart.weight} >= 0))",
+		"fees": "( 35.50 + ({cart.weight}*0.5) + ({cart.price+tax+discount} * (0.005 + 0.0015)) + ({cart.weight}*1.5/100) + (2.15) )/(1-0.1-0.18)"
+	},	
+	
+	
+	
+	
+	"MS01": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 91.56 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS02": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 94.83 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS03": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 99.19 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS04": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 102.46 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS05": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 106.82 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS06": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 114.45 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS07": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 132.98 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS08": {
+		"label": "MS Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79000000) && ({shipto.postcode} <= 79129999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*736.84/1000) + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},	
+	"MS9": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 128.62 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS10": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 134.07 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS11": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 138.43 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS12": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 143.88 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS13": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 149.33 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS14": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 160.23 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS15": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 186.39 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MS16": {
+		"label": "MS Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 79130000) && ({shipto.postcode} <= 79999999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*963.56/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},	
+	
+	
+	
+	"MT01": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 102.46 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT02": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 106.82 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT03": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 111.18 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT04": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 115.54 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT05": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 119.90 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT06": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 128.62 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT07": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 149.33 + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT08": {
+		"label": "MT Capital - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78000000) && ({shipto.postcode} <= 78109999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1105.26/1000) + ({cart.price+tax+discount} * (0.006 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},	
+	"MT9": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 139.52 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT10": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 144.97 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT11": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 150.42 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT12": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 156.96 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT13": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 162.41 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT14": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 174.40 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT15": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 180.94 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"MT16": {
+		"label": "MT Interior - 15 dias úteis",
+		"conditions": "(({shipto.postcode} >= 78110000) && ({shipto.postcode} <= 78899999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1317.81/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},	
+	
+	
+	
+	"AC01": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 183.12 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC02": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 189.66 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC03": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 197.29 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC04": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 204.92 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC05": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 211.46 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC06": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 227.81 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC07": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 264.87 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC08": {
+		"label": "AC Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69900000) && ({shipto.postcode} <= 69920999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1638.27/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},	
+	"AC9": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 299.2 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC10": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 311.17 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC11": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 323.14 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC12": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 335.1 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC13": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 345.74 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC14": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 373.67 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC15": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 432.18 + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},
+	"AC16": {
+		"label": "AC Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69921000) && ({shipto.postcode} <= 69999999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*2724.76/1000) + ({cart.price+tax+discount} * (0.02 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	},		
+	
+	
+	"AM01": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 120.99 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM02": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 125.35 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM03": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 129.71 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM04": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 135.16 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM05": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 139.52 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM06": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 150.42 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM07": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 174.40 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM08": {
+		"label": "AM Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69000000) && ({shipto.postcode} <= 69099999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1315.63/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM9": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 305.2 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM10": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 317.9 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM11": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 330.27 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM12": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 342.26 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM13": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 354.25 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM14": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 381.50 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM15": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 442.54 + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},
+	"AM16": {
+		"label": "AM Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 69100000) && ({shipto.postcode} <= 69299999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*3457.48/1000) + ({cart.price+tax+discount} * (0.025 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	},	
+	
+	
+	"AP01": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 112.27 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP02": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 116.63 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP03": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 120.99 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP04": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 126.44 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP05": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 130.80 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP06": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 140.61 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP07": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 163.50 + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP08": {
+		"label": "AP Capital - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68900000) && ({shipto.postcode} <= 68914999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1090/1000) + ({cart.price+tax+discount} * (0.03 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}	
+	"AP9": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 125.35 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP10": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 130.80 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP11": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 136.25 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP12": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 140.61 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP13": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 146.06 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP14": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 156.96 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP15": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 183.12 + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}
+	"AP16": {
+		"label": "AP Interior - 30 dias úteis",
+		"conditions": "(({shipto.postcode} >= 68915000) && ({shipto.postcode} <= 68999999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1263.31/1000) + ({cart.price+tax+discount} * (0.04 + 0.002)) + (3.80) + 4.8 + 35 )/(1-0.1-0.17)"
+	}	
+	
+	
+	"RO01": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 129.71 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO02": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 135.16 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO03": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 139.52 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO04": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 146.06 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO05": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 150.42 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO06": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 163.50 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO07": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 188.57 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO08": {
+		"label": "RO Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76800000) && ({shipto.postcode} <= 76849999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1309.09/1000) + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+	"RO9": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 146.06 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO10": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 152.60 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO11": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 158.05 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO12": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 164.59 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO13": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 170.04 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO14": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 183.12 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO15": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 213.64 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"RO16": {
+		"label": "RO Interior - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 76850000) && ({shipto.postcode} <= 76999999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1472.59/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+
+	
+	"PA01": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 77.39 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA02": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 80.66 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA03": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 83.93 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA04": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 87.20 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA05": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 90.47 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA06": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 97.01 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA07": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 113.36 + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA08": {
+		"label": "PA Capital - 20 dias úteis",
+		"conditions": "(({shipto.postcode} >= 66000000) && ({shipto.postcode} <= 67999999)) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*783.71/1000) + ({cart.price+tax+discount} * (0.007 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+
+	
+	"PA09": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 101.37 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA10": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 105.73 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA11": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 110.09 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA12": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 114.45 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA13": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 117.72 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA14": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 127.53 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA15": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 148.24 + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA16": {
+		"label": "PA Interior - 20 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68136000) && ({shipto.postcode} <= 68142999)) || (({shipto.postcode} >= 68144000) && ({shipto.postcode} <= 68149999)) || (({shipto.postcode} >= 68189001) && ({shipto.postcode} <= 68192999)) || (({shipto.postcode} >= 68221000) && ({shipto.postcode} <= 68239999)) || (({shipto.postcode} >= 68286000) && ({shipto.postcode} <= 68379199)) || (({shipto.postcode} >= 68379201) && ({shipto.postcode} <= 68999999)) ) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1023.51/1000) + ({cart.price+tax+discount} * (0.01 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+
+
+	
+	"PA17": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} == 68189000)) || (({shipto.postcode} >= 68193000) && ({shipto.postcode} <= 68193999)) || (({shipto.postcode} == 68379200)) ) && (({cart.weight} >= 0) && ({cart.weight} < 30))",
+		"fees": "( 185 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA18": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} == 68189000)) || (({shipto.postcode} >= 68193000) && ({shipto.postcode} <= 68193999)) || (({shipto.postcode} == 68379200)) ) && (({cart.weight} >= 30))",
+		"fees": "( (({cart.weight})*1850/1000) + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+
+
+	
+	"PA19": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 0) && ({cart.weight} < 10))",
+		"fees": "( 112.27 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA20": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 10) && ({cart.weight} < 20))",
+		"fees": "( 116.63 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA21": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 20) && ({cart.weight} < 30))",
+		"fees": "( 120.99 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA22": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 30) && ({cart.weight} < 40))",
+		"fees": "( 126.44 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA23": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 40) && ({cart.weight} < 50))",
+		"fees": "( 130.8 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA24": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 50) && ({cart.weight} < 70))",
+		"fees": "( 140.61 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA25": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 70) && ({cart.weight} < 100))",
+		"fees": "( 163.50 + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}
+	"PA26": {
+		"label": "PA Interior - 30 dias úteis",
+		"conditions": "( (({shipto.postcode} >= 68000000) && ({shipto.postcode} <= 68135999)) || (({shipto.postcode} >= 68143000) && ({shipto.postcode} <= 68143999)) || (({shipto.postcode} >= 68150000) && ({shipto.postcode} <= 68189000)) || (({shipto.postcode} >= 68194000) && ({shipto.postcode} <= 68220999)) || (({shipto.postcode} >= 68240000) && ({shipto.postcode} <= 68285999)) ) && (({cart.weight} >= 100))",
+		"fees": "( (({cart.weight})*1090/1000) + ({cart.price+tax+discount} * (0.07 + 0.002)) + (3.80) + 4.8 )/(1-0.1-0.17)"
+	}	
+	
+}
+
+(frete base + Advalorem e Grid + Pedágio + Gris fixo)/ICMS
+//{cart.weight}
